@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Магазин</title>
+</head>
+<body>
+    <h1>Игры</h1>
+    <ul>
+        {% for game, button_text in games.items %}
+            <li>{{ game }} <button>{{ button_text }}</button></li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'platform_main' %}"><button>Вернуться обратно</button></a>
+</body>
+</html>
